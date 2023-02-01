@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+
 * {
     margin: 0;
     /* padding: 0; */
@@ -9,12 +10,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* networking-sites */
+
+.images img{
+    margin-left: 6rem;
+}
+
+
 /* gallery section */
 .gallery h2 {
     font-size: 3rem;
     line-height: 100%;
     letter-spacing: -0.06em;
     color: #62AC43;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
 }
 
 .gallery h2 u{
@@ -24,16 +34,29 @@ body {
 
 /* destination section */
 
-.destination {
+.destination-section{
+    margin-top: 5rem;
+}
+
+.destination a {
+    text-decoration: none;
+    padding: .5rem 2rem;
+    background-color: #62AC43;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+}
+
+.destination h2{
     font-weight: 500;
     font-size: 3rem;
     line-height: 100%;
     text-align: center;
     letter-spacing: -0.06em;
     color: #313131;
+    margin-top: 7rem;
 }
 
-.destination u {
+.destination h2 u {
     color: #62AC43;
 }
 
@@ -55,7 +78,7 @@ body {
 }
 
 .card-text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 110%;
     color: #828282;
@@ -68,14 +91,15 @@ body {
 
 .icon-image .img {
     box-sizing: border-box;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
 .icon-image .img img {
-    margin-left: .5rem;
+    margin-left: .8rem;
+    margin-top: .5rem;
 }
 
 /*  us section */
@@ -126,6 +150,7 @@ body {
     text-decoration: none;
     padding: .5rem 2rem;
     background-color: #62AC43;
+    text-transform: uppercase;
 }
 
 h2 u {
