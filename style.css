@@ -12,13 +12,19 @@ body {
 
 /* networking-sites */
 
-.images img{
+.images {
+    background-color: #FAFAFA;
+    ;
+}
+
+.images img {
     margin-left: 6rem;
 }
 
 
 /* gallery section */
 .gallery h2 {
+    position: relative;
     font-size: 3rem;
     line-height: 100%;
     letter-spacing: -0.06em;
@@ -27,14 +33,27 @@ body {
     margin-top: 10rem;
 }
 
-.gallery h2 u{
+.gallery h2::before {
+    content: " ";
+    width: 128px;
+    height: 4px;
+    top: 59px;
+    left: 677px;
+    background-color: #313131;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.gallery h2 span {
     color: #313131;
 }
 
 
 /* destination section */
 
-.destination-section{
+.destination-section {
     margin-top: 5rem;
 }
 
@@ -46,7 +65,8 @@ body {
     line-height: 1.4rem;
 }
 
-.destination h2{
+.destination h2 {
+    position: relative;
     font-weight: 500;
     font-size: 3rem;
     line-height: 100%;
@@ -56,7 +76,18 @@ body {
     margin-top: 7rem;
 }
 
-.destination h2 u {
+.destination h2::before {
+    content: " ";
+    width: 234px;
+    height: 4px;
+    top: 59px;
+    left: 621px;
+    background-color: #62AC43;
+    position: absolute;
+    z-index: -1;
+}
+
+.destination h2 span {
     color: #62AC43;
 }
 
@@ -108,6 +139,21 @@ body {
     margin-bottom: 8rem;
 }
 
+.us-section h2{
+    position: relative;
+}
+
+.us-section h2::before{
+    content: " ";
+    width: 95px;
+    height: 4px;
+    top: 59px;
+    left: 567px;
+    background-color: #313131;
+    position: absolute;
+    z-index: -1;
+}
+
 .why {
     margin-top: 14rem;
     margin-bottom: 4rem;
@@ -118,7 +164,7 @@ body {
     color: #62AC43;
 }
 
-.why u {
+.why span {
     color: #313131;
 }
 
@@ -138,12 +184,24 @@ body {
 
 /* customer section */
 .customer h2 {
+    position: relative;
     font-weight: 600;
     font-size: 3rem;
     line-height: 100%;
     letter-spacing: -0.06em;
     color: #313131;
     margin-top: 8rem;
+}
+
+.customer h2::before{
+    content: " ";
+    width: 203px;
+    height: 4px;
+    top: 56px;
+    left: 674px;
+    background-color: #62AC43;
+    position: absolute;
+    z-index: -1;
 }
 
 .customer a {
@@ -153,7 +211,7 @@ body {
     text-transform: uppercase;
 }
 
-h2 u {
+h2 span {
     color: #62AC43;
 }
 
