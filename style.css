@@ -30,7 +30,7 @@ body {
     letter-spacing: -0.06em;
     color: #62AC43;
     margin-bottom: 5rem;
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 .gallery h2::before {
@@ -43,8 +43,6 @@ body {
     position: absolute;
     z-index: -1;
 }
-
-
 
 .gallery h2 span {
     color: #313131;
@@ -215,13 +213,6 @@ h2 span {
     color: #62AC43;
 }
 
-.carousel-indicators .data-bs-target {
-    background-color: #b53e3e;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-}
-
 .items {
     max-width: 800px;
     margin: auto;
@@ -274,4 +265,23 @@ footer {
     font-size: 14px;
     line-height: 18px;
     color: #FAFAFA;
+}
+
+/* media screen */
+@media screen and (max-width: 600px) {
+    .gallery h2::before {
+        left: 284px;
+    }
+
+    .destination h2::before {
+        left: 230px;
+    }
+
+    .us-section h2::before {
+        left: 176px;
+    }
+
+    .customer h2::before {
+        left: 262px;
+    }
 }
