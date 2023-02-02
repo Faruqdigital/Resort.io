@@ -12,8 +12,12 @@ body {
 
 /* header */
 
+.list-item{
+    margin-right: 16rem;
+}
+
 .main-header{
-    margin-top: 7rem;
+    margin-top: 6rem;
     margin-bottom: 7rem;
 }
 
@@ -316,6 +320,8 @@ footer {
 
     .main-header{
         flex-direction: column;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
     }
 
     .header-content{
