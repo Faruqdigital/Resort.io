@@ -10,6 +10,41 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* header */
+.header-content h2 {
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100%;
+    color: #313131;
+}
+
+.header-content p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #828282;
+}
+
+.button-1 a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .5rem 3rem;
+    border-radius: 20px 20px 10px 20px;
+    background-color: #62AC43;
+}
+
+.button-2 a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .5rem 3rem;
+    border-radius: .2rem;
+    background-color: #62AC43;
+}
+
 /* networking-sites */
 
 .images {
@@ -137,11 +172,11 @@ body {
     margin-bottom: 8rem;
 }
 
-.us-section h2{
+.us-section h2 {
     position: relative;
 }
 
-.us-section h2::before{
+.us-section h2::before {
     content: " ";
     width: 95px;
     height: 4px;
@@ -191,7 +226,7 @@ body {
     margin-top: 8rem;
 }
 
-.customer h2::before{
+.customer h2::before {
     content: " ";
     width: 203px;
     height: 4px;
@@ -283,5 +318,12 @@ footer {
 
     .customer h2::before {
         left: 262px;
+    }
+
+
+    /* footer */
+
+    .footer-content {
+        padding: 4rem;
     }
 }
