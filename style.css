@@ -11,6 +11,12 @@ body {
 }
 
 /* header */
+
+.main-header{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
 .header-content h2 {
     font-weight: 500;
     font-size: 100px;
@@ -25,14 +31,22 @@ body {
     color: #828282;
 }
 
+.button-1{
+    background-color: #828282;
+    width: 9rem;
+    height: 2.4rem;
+    border-radius: 0.2rem;
+    translate: 10px 10px 10px 10px;
+}
+
 .button-1 a {
-    font-weight: 500;
+    /* font-weight: 500;
     font-size: 1.2rem;
     color: #FFFFFF;
     text-decoration: none;
     padding: .5rem 3rem;
-    border-radius: 20px 20px 10px 20px;
-    background-color: #62AC43;
+    border-radius: .2rem;
+    background-color: #62AC43; */
 }
 
 .button-2 a {
@@ -304,6 +318,14 @@ footer {
 
 /* media screen */
 @media screen and (max-width: 600px) {
+
+    .main-header{
+        flex-direction: column;
+    }
+    .header-image img{
+        max-width: 40%;
+    }
+
     .gallery h2::before {
         left: 284px;
     }
