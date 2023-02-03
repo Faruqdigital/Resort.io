@@ -40,6 +40,7 @@ body {
 
 .btn-1 {
     text-decoration: none;
+    color: #62AC43;
 }
 
 .main-header {
@@ -66,9 +67,10 @@ body {
     font-size: 1.2rem;
     color: #FFFFFF;
     text-decoration: none;
-    padding: .5rem 3rem;
-    border-radius: .2rem .2rem 2rem .2rem;
+    padding: .8rem 3rem;
+    border-radius: .4rem;
     background-color: #62AC43;
+    clip-path: polygon(0 0, 100% 0%, 89% 100%, 0% 100%);
 }
 
 .button-2 a {
@@ -76,9 +78,11 @@ body {
     font-size: 1.2rem;
     color: #FFFFFF;
     text-decoration: none;
-    padding: .5rem 3rem;
-    border-radius: 2rem .2rem .2rem .2rem;
+    padding: .8rem 3rem;
+    border-radius: .4rem;
     background-color: #2D2D2D;
+    clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0% 100%);
+
 }
 
 .header-image {
@@ -126,10 +130,39 @@ body {
     background-image: url(/images/bg\ style\ \(1\).png);
     background-size: cover;
     position: absolute;
+    z-index: -1;
 }
 
 .gallery h2 span {
     color: #313131;
+}
+
+.gallery-img {
+    position: relative;
+}
+
+.gallery-img::before {
+    content: "";
+    width: 130px;
+    height: 130px;
+    left: 1200px;
+    top: -36px;
+    background-image: url(/images/Vector\ 336.png);
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.gallery-img::after {
+    content: "";
+    width: 130px;
+    height: 130px;
+    left: -10px;
+    top: 746px;
+    background-image: url(/images/Vector\ 337.png);
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
 }
 
 
@@ -417,6 +450,10 @@ footer {
         padding: 3rem 5rem;
     }
 
+    .gallery h2{
+        margin-bottom: 12rem;
+    }
+
     .gallery h2::before {
         left: 284px;
     }
@@ -429,6 +466,15 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    .gallery-img::before {
+        left: 372px;
+    }
+
+    .gallery-img::after {
+        left: 45px;
+        top: 2461px;
     }
 
     .destination h2::before {
